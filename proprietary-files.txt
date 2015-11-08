@@ -1,69 +1,107 @@
 
-
-
-# Bluetooth
-bin/btnvtool
-bin/wcnss_filter
-
-# CPU
-bin/msm_irqbalance
-bin/perfd
-bin/thermal-engine
-
-# QMI
-bin/ATFWD-daemon
-bin/irsc_util
-bin/pm-proxy
-bin/pm-service
-
 # GPS
-bin/loc_launcher
-bin/location-mq
-etc/permissions/com.qualcomm.location.xml
 lib/libloc_api_v02.so
 lib/libloc_core.so
 lib/libloc_ds_api.so
 lib/libloc_eng.so
-
-# CNE / DPM
-etc/cne/profile.txt
-framework/cneapiclient.jar
--priv-app/CNEService/CNEService.apk
+lib/libgps.utils.so
 
 # Bins
+bin/ATFWD-daemon
+bin/btnvtool
+bin/cnd
+bin/cnss-daemon
 bin/diag_klog
 bin/diag_mdlog
+bin/fingerprintd
+bin/ims_rtp_daemon
+bin/imscmservice
+bin/imsdatadaemon
+bin/imsqmidaemon
+bin/irsc_util
+bin/loc_launcher
+bin/location-mq
+bin/lowi-server
+bin/msm_irqbalance
+bin/netmgrd
+bin/nl_listener
+bin/perfd
 bin/port-bridge
+bin/pm-proxy
+bin/pm-service
+bin/qmakernote-xtract
+bin/qmuxd
+bin/radish
+bin/rmt_storage
+bin/subsystem_ramdump
+bin/thermal-engine
+bin/wcnss_filter
 
 # Radio
 -app/atfwd/atfwd.apk
-bin/netmgrd
-bin/qmuxd
-bin/radish
-bin/rfs_access
-bin/rmt_storage
-
 etc/diag/Bullhead_radio-general.cfg
 etc/diag/IMS_DS_CM_NAS.cfg
 etc/diag/radio_ims.cfg
 etc/diag/wlan.cfg
 etc/permissions/cneapiclient.xml
 etc/permissions/qcrilhook.xml
-etc/sensors/sensor_def_qcomdev.conf
 framework/cneapiclient.jar
 framework/qcrilhook.jar
-
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-
-# Sensors
-vendor/lib/libsensor_reg.so
-bin/motosh
-etc/firmware/sensorhubfw.bin
-lib/hw/sensors.msm8992.so
-vendor/lib/libsubsystem_control.so
-vendor/lib/libSubSystemShutdown.so
-lib64/hw/sensorhub.msm8992.so
+-priv-app/CNEService/CNEService.apk
+etc/cne/profile.txt
 
 # Time (Linked to radio)
 -app/TimeService/TimeService.apk
 bin/time_daemon
+
+#Bullhead apps
+-app/DMAgent/DMAgent.apk
+-app/HiddenMenu/HiddenMenu.apk
+-app/RCSBootstraputil/RCSBootstraputil.apk
+-app/RcsImsBootstraputil/RcsImsBootstraputil.apk
+#Bullhead priv-apps
+-priv-app/ConnMO/ConnMO.apk
+-priv-app/DCMO/DCMO.apk
+-priv-app/DiagMon/DiagMon.apk
+-priv-app/DMConfigUpdate/DMConfigUpdate.apk
+-priv-app/DMService/DMService.apk
+-priv-app/HotwordEnrollment/HotwordEnrollment.apk
+-priv-app/LifeTimerService/LifeTimerService.apk
+-priv-app/SprintDM/SprintDM.apk
+#framework
+framework/rcsimssettings.jar
+framework/rcsservice.jar
+#acdb
+etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP/MTP_General_cal.acdb
+etc/acdbdata/MTP/MTP_Global_cal.acdb
+etc/acdbdata/MTP/MTP_Handset_cal.acdb
+etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP/MTP_Headset_cal.acdb
+etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+#data
+etc/data/dsi_config.xml
+etc/data/netmgr_config.xml
+etc/data/qmi_config.xml
+#permissions
+etc/permissions/com.android.omadm.service.xml
+etc/permissions/qti_permissions.xml
+etc/permissions/rcsservice.xml
+#regular etc files
+etc/flp.conf
+etc/izat.conf
+etc/lowi.conf
+etc/qcril.db
+etc/sap.conf
+etc/thermal-engine-8992.conf
+#lib/hw
+lib/hw/fingerprint.bullhead.so
+lib/hw/gps.msm8992.so
+#lib for fmas
+lib/soundfx/libfmas.so
+
+#not sure about these
+lib/lib_fpc_tac_shared.so
+lib/libdmengine.so
+lib/libdmjavaplugin.so
+lib64/libjni_keyboarddecoder.so
