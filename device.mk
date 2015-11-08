@@ -125,7 +125,7 @@ PRODUCT_COPY_FILES += \
     device/lge/bullhead/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # MSM IRQ Balancer configuration file
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     device/lge/bullhead/msm_irqbalance.conf:vendor/etc/msm_irqbalance.conf
 
 # Power configuration file
@@ -403,7 +403,7 @@ PRODUCT_PACKAGES += \
 
 # old-apns.conf
 PRODUCT_COPY_FILES += \
-    device/huawei/angler/old-apns-conf.xml:system/etc/old-apns-conf.xml
+    device/lge/bullhead/old-apns-conf.xml:system/etc/old-apns-conf.xml
 
 # Modem debugger
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
